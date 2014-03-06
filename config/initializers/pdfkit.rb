@@ -12,25 +12,25 @@ PDFKit.configure do |config|
   #config.wkhtmltopdf = 'C:\Sites\rails_project\r_vest\vendor\wkhtmltopdf\bin\wkhtmltopdf.exe'
   config.default_options = {
     
-    :encoding => 'UTF-8',
-    :page_size => 'Letter',
+    #:encoding => 'UTF-8',
+    #:page_size => 'Letter',
     #:footer_center => "Created on #{Time.now.strftime("%Y/%m/%d")}",
     #:footer_right => "Page [page] of [toPage]",
     #:footer_center => "hi",
     #:footer_html => "",
      #:action => "welcome.html.erb",
 
-    :margin_top=>"1in",
-    :margin_right=>"1in",
-    :margin_bottom=>"0.5in",
-    :margin_left=>"1in",
+    #:margin_top=>"1in",
+    #:margin_right=>"1in",
+    #:margin_bottom=>"0.5in",
+    #:margin_left=>"1in",
 
     
-    :zoom => '1.5',
+    #:zoom => '1.5',
 
     #:header =>'5in',
-    :disable_smart_shrinking=> false,
-    :print_media_type => true
+    #:disable_smart_shrinking=> false,
+    #:print_media_type => true
   }
    config.wkhtmltopdf = Rails.root.join('vendor', 'wkhtmltopdf','bin', 'wkhtmltopdf.exe').to_s
   config.root_url = "http://localhost" 
