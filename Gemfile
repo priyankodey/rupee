@@ -19,7 +19,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'pdfkit','0.5.2'
 #gem 'wkhtmltopdf-binary','0.9.9.1'
-gem 'wkhtmltopdf-heroku','1.0.0'
+#gem 'wkhtmltopdf-heroku','1.0.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
