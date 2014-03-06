@@ -34,7 +34,7 @@ PDFKit.configure do |config|
   }
   
   if Rails.env=="heroku"
-   config.wkhtmltopdf = Rails.root.join('vendor', 'wkhtmltopdf', 'wkhtmltopdf.exe').to_s 
+   config.wkhtmltopdf = Rails.root.join('vendor', 'wkhtmltopdf-0.9.9-installer').to_s 
    #config.root_url = "http://localhost" 
   else
     config.wkhtmltopdf = Rails.root.join('vendor', 'wkhtmltopdf', 'wkhtmltopdf.exe').to_s
