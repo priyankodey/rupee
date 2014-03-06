@@ -32,7 +32,13 @@ PDFKit.configure do |config|
     #:disable_smart_shrinking=> false,
     #:print_media_type => true
   }
-   config.wkhtmltopdf = Rails.root.join('vendor', 'wkhtmltopdf', 'wkhtmltopdf.exe').to_s
-  config.root_url = "http://localhost" 
+  
+  if Rails.env=="heroku"
+   config.wkhtmltopdf = Rails.root.join('vendor', 'wkhtmltopdf', 'wkhtmltopdf.exe').to_s 
+   config.root_url = "http://localhost" 
+  else
+    config.wkhtmltopdf = Rails.root.join('vendor', 'wkhtmltopdf', 'wkhtmltopdf.exe').to_s
+    config.root_url = "http://localhost" 
+end
 end
 
